@@ -36,9 +36,9 @@ get '/' do
   # perform an authenticated request to the Shopify API
   response = HTTParty.get(
     "https://#{shop}/admin/products.json",
-    :query => { 'limit': 10 },
-    :headers => { 'X-SHOPIFY-ACCESS-TOKEN': session[:access_token] },
-    :format => :json
+    query: { 'limit': 10 },
+    headers: { 'X-SHOPIFY-ACCESS-TOKEN': session[:access_token] },
+    format: :json
   )
 
   if response.code == 200 
