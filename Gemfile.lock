@@ -2,8 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     dotenv (2.2.1)
-    httparty (0.16.2)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
+    mini_mime (1.1.2)
     multi_xml (0.6.0)
     mustermann (1.0.3)
     rack (2.0.7)
